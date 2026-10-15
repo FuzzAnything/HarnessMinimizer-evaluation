@@ -7,11 +7,12 @@ distributed under LICENSE.MIT. Applicable upstream copyright notices, license
 texts, and permissions remain in effect under either HarnessMinimizer licensing
 option and when original MIT evaluation files are reused.
 
-LLVM FuzzedDataProvider and symbolizer tools
-------------------------------------------
+LLVM FuzzedDataProvider and external symbolizers
+----------------------------------------------
 
 Upstream project: LLVM Project
 Source: https://github.com/llvm/llvm-project
+Header source: https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/fuzzer/FuzzedDataProvider.h
 Upstream license: Apache-2.0 WITH LLVM-exception
 Full upstream license text: THIRD_PARTY_LICENSES/LLVM.txt
 License source: https://llvm.org/LICENSE.txt
@@ -22,16 +23,19 @@ Applicable local files:
   consumption helpers, including byte/string consumption, integral and
   floating-point consumption, byte-pointer advancement, and unsigned-to-signed
   conversion.
-- src/harnessminimizer/symbolizers/asan/llvm-symbolizer and
-  src/harnessminimizer/symbolizers/ubsan/llvm-symbolizer are LLVM tool binaries.
-  Their license information is recorded in adjacent .license files.
 
 HarnessMinimizer Authors modified the header and runtime in 2026 to support
 call-site identifiers, value recording/replay, and an external replay runtime.
 The modified files are distributed as a whole under LICENSE.HarnessMinimizer,
 with the applicable upstream Apache-2.0 WITH LLVM-exception conditions
 preserved. The original LLVM header attribution and SPDX notice are retained.
-The bundled symbolizer binaries retain their upstream LLVM licensing.
+
+src/harnessminimizer/symbolizers/asan/llvm-symbolizer and
+src/harnessminimizer/symbolizers/ubsan/llvm-symbolizer are HarnessMinimizer shell
+launchers covered by LICENSE.HarnessMinimizer. They restore the caller's library
+search path and execute an externally installed LLVM symbolizer. The external
+LLVM executable retains its upstream license. The launcher files themselves
+contain HarnessMinimizer code.
 
 treereduce
 ----------
@@ -78,6 +82,13 @@ not grant exceptions to Perses's license.
 
 Benchmark materials and other dependencies
 -----------------------------------------
+
+The repository includes target-library headers and support data under
+benchmark/*/*/build/sanitizer/include/ and benchmark/*/*/build/sanitizer/share/.
+Their applicable terms vary by component and sometimes by file. These materials
+also include dependencies of target libraries, such as Abseil headers installed
+alongside Protobuf and RE2. The core component entries above are not a complete
+license inventory of the benchmark materials.
 
 The MIT grant for original evaluation files does not cover benchmark harnesses,
 crash inputs, or target libraries. The relevant original permissions and

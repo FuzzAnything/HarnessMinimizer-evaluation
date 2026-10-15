@@ -1,8 +1,10 @@
 // Copyright (C) 2026 HarnessMinimizer Authors
-// SPDX-License-Identifier: AGPL-3.0-only
+// SPDX-License-Identifier: AGPL-3.0-only AND (Apache-2.0 WITH LLVM-exception)
 // HarnessMinimizer license: https://github.com/FuzzAnything/HarnessMinimizer/blob/main/LICENSE
 // See LICENSE.HarnessMinimizer for the terms and commercial licensing option.
 // Applicable third-party notices are in THIRD_PARTY_NOTICES.
+// Modified in 2026 by HarnessMinimizer Authors to add call-site identifiers,
+// value recording/replay, and support for an external replay runtime.
 
 //===- FuzzedDataProvider.h - Utility header for fuzz targets ---*- C++ -* ===//
 //

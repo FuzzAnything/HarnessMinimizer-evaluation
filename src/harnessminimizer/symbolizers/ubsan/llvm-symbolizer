@@ -1,4 +1,9 @@
 #!/bin/sh
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: AGPL-3.0-only
+# HarnessMinimizer license: https://github.com/FuzzAnything/HarnessMinimizer/blob/main/LICENSE
+# See LICENSE.HarnessMinimizer for the terms and commercial licensing option.
+
 # Keep the caller's LLVM dependencies, without HarnessMinimizer's target paths.
 if [ "${HARNESSMINIMIZER_SYMBOLIZER_LD_LIBRARY_PATH_SET:-0}" = 1 ]; then
     export LD_LIBRARY_PATH="$HARNESSMINIMIZER_SYMBOLIZER_LD_LIBRARY_PATH"

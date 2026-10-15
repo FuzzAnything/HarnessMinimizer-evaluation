@@ -5,6 +5,7 @@
 // Applicable third-party notices are in THIRD_PARTY_NOTICES.
 // Contains portions adapted from LLVM's FuzzedDataProvider.
 // LLVM portions retain Apache-2.0 WITH LLVM-exception.
+// Modified in 2026 by HarnessMinimizer Authors for value recording/replay.
 
 #include "fuzzer/FuzzedDataProviderReplayRuntime.h"
 
