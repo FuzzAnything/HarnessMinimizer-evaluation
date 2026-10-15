@@ -1,6 +1,6 @@
 # HarnessMinimizer
 
-This repository is for research purposes only.
+![This repository is for research purposes only.](docs/assets/research-only.svg)
 
 ## Installation
 
@@ -130,4 +130,4 @@ For replay and oracle experiments, `--jobs` defaults to 10 reducer workers; `--p
 
 For the open-source HarnessMinimizer tool, visit [FuzzAnything/HarnessMinimizer](https://github.com/FuzzAnything/HarnessMinimizer).
 
-This repository is for research purposes only.
+![This repository is for research purposes only.](docs/assets/research-only.svg)
