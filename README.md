@@ -132,10 +132,10 @@ For the open-source HarnessMinimizer tool, visit [FuzzAnything/HarnessMinimizer]
 
 ## License
 
-This repository contains components under different licenses. [LICENSE](LICENSE) records their scope and identifies the evaluation files covered by MIT.
+This repository contains components under different licenses. [LICENSE](LICENSE) records their scope.
 
 1. **HarnessMinimizer code.** Code copied or adapted from the main repository is subject to the [original HarnessMinimizer license](https://github.com/FuzzAnything/HarnessMinimizer/blob/main/LICENSE): **AGPL-3.0-only**, or a separately negotiated commercial license. A complete copy is included in [LICENSE.HarnessMinimizer](LICENSE.HarnessMinimizer). The commercial option requires a separate agreement with the applicable copyright holders.
-2. **Per-file licenses and evaluation code.** Original evaluation modules, scripts, and tests marked `SPDX-License-Identifier: MIT` may be reused under [LICENSE.MIT](LICENSE.MIT). Check the license notices at the beginning of each source file. The MIT grant for an evaluation file does not replace the license obligations for HarnessMinimizer code used with it. Files containing third-party material also retain the applicable upstream conditions.
-3. **Third-party components.** LLVM code and tools retain **Apache-2.0 WITH LLVM-exception** terms, treereduce retains its **MIT** terms, and the separately obtained Perses engines retain **GPL-3.0-or-later** terms. See [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES) and [THIRD_PARTY_LICENSES](THIRD_PARTY_LICENSES/) for attribution, component details, and the included license texts. Benchmark materials and other dependencies retain their applicable permissions and notices.
+2. **Per-file licenses and evaluation code.** Evaluation modules, scripts, and tests marked `SPDX-License-Identifier: MIT` may be reused under [LICENSE.MIT](LICENSE.MIT). Check the license notices at the beginning of each source file. The MIT grant for an evaluation file does not replace the license obligations for HarnessMinimizer code used with it. Files containing third-party components also retain the applicable upstream conditions.
+3. **Third-party components.** LLVM code and tools retain **Apache-2.0 WITH LLVM-exception** terms, treereduce retains its **MIT** terms, and the separately obtained Perses engines retain **GPL-3.0-or-later** terms. See [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES) and [THIRD_PARTY_LICENSES](THIRD_PARTY_LICENSES/) for attribution, component details, and the included license texts.
 
 ![This repository contains code and commands for reproducing the paper's evaluation experiments.](docs/assets/evaluation-purpose.svg)
