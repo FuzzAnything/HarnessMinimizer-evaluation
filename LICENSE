@@ -22,13 +22,8 @@ tests/, tools/perses/, and tools/treereduce/. The MIT files listed in section 2
 and third-party components identified in section 3 have the additional or separate
 terms stated there.
 
-The upstream SPDX notice in include/fuzzer/FuzzedDataProvider.h is preserved.
-Its LLVM portions retain Apache-2.0 WITH LLVM-exception terms in addition to
-the terms applying to the modified HarnessMinimizer file. The adapted runtime
-src/harnessminimizer/fdp_replay_runtime.cpp also retains the LLVM terms.
-
-1. Evaluation code and documentation
---------------------------------------------
+2. Evaluation code and documentation
+-----------------------------------
 
 The evaluation code in the following files is licensed under MIT, as
 stated in the headers. The full grant and conditions are in LICENSE.MIT.
@@ -58,21 +53,16 @@ stated in the headers. The full grant and conditions are in LICENSE.MIT.
 
 The MIT license covers these files individually. A combined work that
 incorporates AGPL-covered HarnessMinimizer code must comply with the AGPL unless
-covered by a separate commercial agreement. The MIT license do not relicense
+covered by a separate commercial agreement. The MIT license does not relicense
 the HarnessMinimizer code or third-party components used by these files.
 
-1. Third-party components and benchmark materials
+3. Third-party components and benchmark materials
 -----------------------------------------------
 
-Upstream copyright notices, permissions, and license conditions remain
-applicable to third-party components under either HarnessMinimizer licensing
-option. See THIRD_PARTY_NOTICES and THIRD_PARTY_LICENSES/ for component details.
+Third-party components retain their own licenses and copyright notices.
+See THIRD_PARTY_NOTICES and THIRD_PARTY_LICENSES/ for component details.
 
-LLVM material retains Apache-2.0 WITH LLVM-exception terms. Upstream treereduce
-material retains its MIT terms. Separately obtained Perses engines retain
-their GPL-3.0-or-later terms.
-
-The MIT grant for evaluation code does not cover target libraries, or other
+The MIT license for evaluation code does not cover target libraries or other
 upstream materials in benchmark/. Their applicable permissions and notices
 remain in effect. Other tools and packages downloaded by the Dockerfile or
 installers retain their own license terms.
