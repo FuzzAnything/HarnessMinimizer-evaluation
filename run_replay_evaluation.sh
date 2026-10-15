@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: MIT
+# See LICENSE.MIT for the full license.
+
 set -euo pipefail
 repo_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 if [[ -n "${HARNESSMINIMIZER_PYTHON:-}" ]]; then

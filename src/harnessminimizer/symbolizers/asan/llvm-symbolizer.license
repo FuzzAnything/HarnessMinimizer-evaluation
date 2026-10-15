@@ -1,0 +1,6 @@
+SPDX-FileCopyrightText: LLVM Project contributors
+SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+
+Source: https://github.com/llvm/llvm-project/tree/main/llvm/tools/llvm-symbolizer
+License: https://llvm.org/LICENSE.txt
+Full license text: THIRD_PARTY_LICENSES/LLVM.txt

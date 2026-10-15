@@ -1,3 +1,7 @@
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: MIT
+# See LICENSE.MIT for the full license.
+
 """Rebuild replay and one-way oracle reports from selected experiment runs."""
 from __future__ import annotations
 

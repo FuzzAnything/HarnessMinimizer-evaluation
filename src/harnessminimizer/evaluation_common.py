@@ -1,3 +1,7 @@
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: MIT
+# See LICENSE.MIT for the full license.
+
 """Durable artifacts and collection transactions for the two evaluation runners."""
 from __future__ import annotations
 

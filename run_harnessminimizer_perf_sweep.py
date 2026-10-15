@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: MIT
+# See LICENSE.MIT for the full license.
+
 """Evaluate both TSV datasets serially and generate reports for a fresh batch."""
 from __future__ import annotations
 

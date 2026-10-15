@@ -1,3 +1,7 @@
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: MIT
+# See LICENSE.MIT for the full license.
+
 """Observation of D, the operational oracle F, and symbolized comparison S.
 
 Paired runs execute candidates with symbolization both off and on. Offline

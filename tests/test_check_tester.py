@@ -1,3 +1,7 @@
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: MIT
+# See LICENSE.MIT for the full license.
+
 import importlib.util
 import re
 import unittest

@@ -1,3 +1,7 @@
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: MIT
+# See LICENSE.MIT for the full license.
+
 """Independent symbolized executions for the oracle experiment."""
 from __future__ import annotations
 

@@ -1,0 +1,8 @@
+SPDX-FileCopyrightText: 2026 HarnessMinimizer Authors
+SPDX-FileCopyrightText: 2025 Brian Langston Barrett
+SPDX-License-Identifier: AGPL-3.0-only AND MIT
+
+HarnessMinimizer license: https://github.com/FuzzAnything/HarnessMinimizer/blob/main/LICENSE
+HarnessMinimizer changes use LICENSE.HarnessMinimizer, including its separate
+commercial licensing option. Upstream material retains the MIT terms in
+THIRD_PARTY_LICENSES/treereduce.txt.

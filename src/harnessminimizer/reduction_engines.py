@@ -1,3 +1,9 @@
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: AGPL-3.0-only
+# HarnessMinimizer license: https://github.com/FuzzAnything/HarnessMinimizer/blob/main/LICENSE
+# See LICENSE.HarnessMinimizer for the terms and commercial licensing option.
+# Applicable third-party notices are in THIRD_PARTY_NOTICES.
+
 """Reducer commands and the Perses test-script protocol.
 
 The candidate checker keeps its existing 77/1/-1 contract. Only the generated

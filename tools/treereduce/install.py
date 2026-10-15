@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: AGPL-3.0-only
+# HarnessMinimizer license: https://github.com/FuzzAnything/HarnessMinimizer/blob/main/LICENSE
+# See LICENSE.HarnessMinimizer for the terms and commercial licensing option.
+# Applicable third-party notices are in THIRD_PARTY_NOTICES.
+
 """Install the pinned treereduce with the HarnessMinimizer cleanup patch."""
 import argparse
 import hashlib

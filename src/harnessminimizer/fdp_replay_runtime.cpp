@@ -1,3 +1,11 @@
+// Copyright (C) 2026 HarnessMinimizer Authors
+// SPDX-License-Identifier: AGPL-3.0-only AND (Apache-2.0 WITH LLVM-exception)
+// HarnessMinimizer license: https://github.com/FuzzAnything/HarnessMinimizer/blob/main/LICENSE
+// See LICENSE.HarnessMinimizer for the terms and commercial licensing option.
+// Applicable third-party notices are in THIRD_PARTY_NOTICES.
+// Contains portions adapted from LLVM's FuzzedDataProvider.
+// LLVM portions retain Apache-2.0 WITH LLVM-exception.
+
 #include "fuzzer/FuzzedDataProviderReplayRuntime.h"
 
 #include <algorithm>

@@ -1,3 +1,7 @@
+# Copyright (C) 2026 HarnessMinimizer Authors
+# SPDX-License-Identifier: MIT
+# See LICENSE.MIT for the full license.
+
 """Count FDP callsites without rewriting raw reducer output or tool transforms."""
 from __future__ import annotations
 
