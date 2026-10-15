@@ -62,7 +62,7 @@ the HarnessMinimizer code or third-party components used by these files.
 Third-party components retain their own licenses and copyright notices.
 See THIRD_PARTY_NOTICES and THIRD_PARTY_LICENSES/ for component details.
 
-The MIT license for evaluation code does not cover target libraries or other
-upstream materials in benchmark/. Their applicable permissions and notices
-remain in effect. Other tools and packages downloaded by the Dockerfile or
-installers retain their own license terms.
+The MIT license for evaluation code does not cover benchmark harnesses, crash
+inputs, target libraries, or other upstream materials in benchmark/. Their
+applicable permissions and notices remain in effect. Other tools and packages
+downloaded by the Dockerfile or installers retain their own license terms.

@@ -1,41 +1,33 @@
 HarnessMinimizer evaluation artifact third-party notices
 ======================================================
 
-HarnessMinimizer tool code is distributed under the terms in
-LICENSE.HarnessMinimizer. Original evaluation files identified in LICENSE are
-distributed under LICENSE.MIT. Applicable upstream copyright notices, license
-texts, and permissions remain in effect under either HarnessMinimizer licensing
-option and when original MIT evaluation files are reused.
+HarnessMinimizer tool code is covered by LICENSE.HarnessMinimizer.
+The evaluation files identified in LICENSE are covered by LICENSE.MIT.
 
-LLVM FuzzedDataProvider and external symbolizers
-----------------------------------------------
+Third-party components retain their own licenses and copyright notices.
+Included upstream license texts are in THIRD_PARTY_LICENSES/.
+
+LLVM FuzzedDataProvider
+----------------------
 
 Upstream project: LLVM Project
-Source: https://github.com/llvm/llvm-project
-Header source: https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/fuzzer/FuzzedDataProvider.h
+Source: https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/fuzzer/FuzzedDataProvider.h
 Upstream license: Apache-2.0 WITH LLVM-exception
 Full upstream license text: THIRD_PARTY_LICENSES/LLVM.txt
 License source: https://llvm.org/LICENSE.txt
 
 Applicable local files:
 - include/fuzzer/FuzzedDataProvider.h contains the modified upstream header.
-- src/harnessminimizer/fdp_replay_runtime.cpp contains adapted Native*
-  consumption helpers, including byte/string consumption, integral and
-  floating-point consumption, byte-pointer advancement, and unsigned-to-signed
-  conversion.
+- src/harnessminimizer/fdp_replay_runtime.cpp contains adapted Native* consumption
+  helpers, including byte/string consumption, integral and floating-point
+  consumption, byte-pointer advancement, and unsigned-to-signed conversion.
 
-HarnessMinimizer Authors modified the header and runtime in 2026 to support
-call-site identifiers, value recording/replay, and an external replay runtime.
-The modified files are distributed as a whole under LICENSE.HarnessMinimizer,
-with the applicable upstream Apache-2.0 WITH LLVM-exception conditions
-preserved. The original LLVM header attribution and SPDX notice are retained.
-
-src/harnessminimizer/symbolizers/asan/llvm-symbolizer and
-src/harnessminimizer/symbolizers/ubsan/llvm-symbolizer are HarnessMinimizer shell
-launchers covered by LICENSE.HarnessMinimizer. They restore the caller's library
-search path and execute an externally installed LLVM symbolizer. The external
-LLVM executable retains its upstream license. The launcher files themselves
-contain HarnessMinimizer code.
+HarnessMinimizer Authors modified the header in 2026 to add call-site
+identifiers, value recording/replay, and support for an external replay
+runtime. The modified header and replay runtime are distributed as a whole
+under LICENSE.HarnessMinimizer, with the applicable upstream Apache-2.0 WITH LLVM-exception
+conditions preserved. The original LLVM attribution and SPDX notice are
+retained as upstream notices.
 
 treereduce
 ----------
@@ -49,16 +41,15 @@ Full upstream license text: THIRD_PARTY_LICENSES/treereduce.txt
 License source: https://github.com/langston-barrett/treereduce/blob/47655579ae4a19e95d7c4f7911d7ded7719b6d22/LICENSE
 
 Applicable local files and installed component:
-- tools/treereduce/process-cleanup.patch contains HarnessMinimizer changes and
-  upstream context and removed lines. Its adjacent .license file identifies
-  the HarnessMinimizer terms and upstream MIT terms.
-- tools/treereduce/install.py downloads the pinned upstream source, verifies
-  its checksum, applies the patch, and builds the treereduce-c executable.
+- tools/treereduce/process-cleanup.patch modifies upstream treereduce and
+  includes upstream context and removed lines.
+- tools/treereduce/install.py downloads and verifies the pinned upstream source,
+  applies the patch, and installs the treereduce-c executable.
 
 HarnessMinimizer Authors added process-group cleanup for timeouts/cancellation
-and a supervisor version probe. The patched program and our installer use the
-terms in LICENSE.HarnessMinimizer, with the upstream MIT copyright and
-permission notice preserved for the upstream material.
+and a supervisor version probe. The patched treereduce source and executable
+are distributed as a whole under LICENSE.HarnessMinimizer, with the upstream MIT copyright
+and permission notice preserved. The installer is also covered by LICENSE.HarnessMinimizer.
 
 Optional external Perses engines
 -------------------------------
@@ -71,29 +62,19 @@ License text: https://github.com/uw-pluverse/perses/blob/6c6ae0db20fa83b0f85a71c
 Version grant: https://github.com/uw-pluverse/perses/blob/6c6ae0db20fa83b0f85a71ca447f0c4d5e056bd2/src/org/perses/reduction/reducer/PersesNodeReducer.kt
 
 Applicable HarnessMinimizer integration files:
-- tools/perses/install.py builds a separately obtained, unmodified checkout.
-- src/harnessminimizer/reduction_engines.py invokes the external engines.
+- tools/perses/install.py builds and installs a separately obtained,
+  unmodified upstream checkout.
+- src/harnessminimizer/reduction_engines.py invokes Perses through its
+  command-line interface.
 
-Perses provides the optional perses, wdd, and cdd engines. Users obtain and
-build Perses separately. The installer and command-line adapter use the terms
-in LICENSE.HarnessMinimizer. The separately installed Perses program retains
-its own GPL-3.0-or-later terms. A commercial HarnessMinimizer agreement does
-not grant exceptions to Perses's license.
+Perses is a separate, optional external program and is not part of the
+HarnessMinimizer distribution. It provides the optional perses, wdd, and cdd
+engines. Users obtain it separately from upstream; no Perses source or binaries
+are bundled with HarnessMinimizer.
 
-Benchmark materials and other dependencies
------------------------------------------
+Our installer and command-line adapter are covered by LICENSE.HarnessMinimizer. The separately
+installed Perses program remains under its upstream GPL-3.0-or-later terms.
+HarnessMinimizer's commercial license does not cover Perses or grant exceptions
+to its license.
 
-The repository includes target-library headers and support data under
-benchmark/*/*/build/sanitizer/include/ and benchmark/*/*/build/sanitizer/share/.
-Their applicable terms vary by component and sometimes by file. These materials
-also include dependencies of target libraries, such as Abseil headers installed
-alongside Protobuf and RE2. The core component entries above are not a complete
-license inventory of the benchmark materials.
-
-The MIT grant for original evaluation files does not cover benchmark harnesses,
-crash inputs, or target libraries. The relevant original permissions and
-notices remain applicable to those materials.
-
-Other packages and tools downloaded by Dockerfile, setup_docker.sh, or the
-installers retain their own license terms and notices. These files do not
-grant a commercial exception for third-party components.
+Separately installed dependencies retain their own licenses and notices.
