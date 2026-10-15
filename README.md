@@ -128,7 +128,8 @@ Resume oracle evaluation, retrying failed or incomplete cases.
 
 For replay and oracle experiments, `--jobs` defaults to 10 reducer workers; `--parallel` defaults to one concurrent case, increase `--parallel` to run different cases in parallel. Results are saved under `output/replay-evaluation/` and `output/oracle-evaluation/`; use `--results-root` to choose another location.
 
-For the open-source HarnessMinimizer tool, visit [FuzzAnything/HarnessMinimizer](https://github.com/FuzzAnything/HarnessMinimizer).
+> [!IMPORTANT]
+> **For the open-source HarnessMinimizer tool, visit [FuzzAnything/HarnessMinimizer](https://github.com/FuzzAnything/HarnessMinimizer).**
 
 ## License
 
